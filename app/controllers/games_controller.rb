@@ -2,7 +2,7 @@ class GamesController < ApplicationController
   before_action :game_params, only: [:create]
 
   def index
-    render json: Game.all
+    render json: { payload: { data: Game.all } }
   end
 
   def create
