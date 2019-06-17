@@ -2,7 +2,7 @@ class GamesController < ApplicationController
   before_action :game_params, only: [:create]
 
   def index
-    render json: { payload: { games: Game.all } }
+    render json: { payload: { games: Game.all.order(created_at: :desc) } }
   end
 
   def create
