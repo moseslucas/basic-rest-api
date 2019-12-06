@@ -5,7 +5,7 @@ ruby '2.4.3'
 
 gem 'rails', '~> 5.2.2'
 gem 'pg', '>= 0.18', '< 2.0'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'faker'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
